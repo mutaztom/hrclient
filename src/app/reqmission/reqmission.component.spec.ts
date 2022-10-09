@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginComponent } from './login.component';
-import { MatButton } from '@angular/material/button'
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+import { ReqmissionComponent } from './reqmission.component';
+
+describe('ReqmissionComponent', () => {
+  let component: ReqmissionComponent;
+  let fixture: ComponentFixture<ReqmissionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
+      declarations: [ ReqmissionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(ReqmissionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

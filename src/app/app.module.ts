@@ -10,7 +10,17 @@ import { OrdersComponent } from './orders/orders.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { ReactiveFormsModule} from '@angular/forms/'
+import { ReactiveFormsModule} from '@angular/forms'
+import { MatButton } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { ReqmedicalComponent } from './reqmedical/reqmedical.component';
+import { ReqmissionComponent } from './reqmission/reqmission.component';
+import { ReqloanComponent } from './reqloan/reqloan.component';
+import { MatNativeDateModule } from '@angular/material/core'
+import { MatDatepickerModule } from '@angular/material/datepicker'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +28,9 @@ import { ReactiveFormsModule} from '@angular/forms/'
     ServicecenterComponent,
     OrdersComponent,
     NotificationsComponent,
+    ReqmedicalComponent,
+    ReqmissionComponent,
+    ReqloanComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +38,11 @@ import { ReactiveFormsModule} from '@angular/forms/'
     BrowserAnimationsModule,
     MatCardModule,
     MatFormFieldModule,
-    ReactiveFormsModule ,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule,MatNativeDateModule,MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
