@@ -20,7 +20,11 @@ import { ReqmedicalComponent } from './reqmedical/reqmedical.component';
 import { ReqmissionComponent } from './reqmission/reqmission.component';
 import { ReqloanComponent } from './reqloan/reqloan.component';
 import { MatNativeDateModule } from '@angular/material/core'
-import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { EmpinfoComponent } from './empinfo/empinfo.component'
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpErrorHandler } from './http-error-handler.service';
+import { MessageService } from './messages.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker'
     NotificationsComponent,
     ReqmedicalComponent,
     ReqmissionComponent,
-    ReqloanComponent
+    ReqloanComponent,
+    EmpinfoComponent
   ],
   imports: [
     BrowserModule,
@@ -41,10 +46,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker'
     ReactiveFormsModule,
     MatGridListModule,
     MatIconModule,
-    MatToolbarModule,
+    MatToolbarModule,HttpClientModule,
     MatMenuModule,MatNativeDateModule,MatDatepickerModule,
   ],
-  providers: [],
+  providers: [HttpErrorHandler,MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

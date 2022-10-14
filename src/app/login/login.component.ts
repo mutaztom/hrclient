@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   submit() {
     if (this.form.valid) {
       this.submitEM.emit(this.form.value);
-      this.router.navigate(['servicecenter']);
+      this.router.navigate(['empinfo']);
 
     }
   }
